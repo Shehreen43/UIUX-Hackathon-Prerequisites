@@ -16,14 +16,7 @@ export default function TopHeader() {
             Sign Up Now
           </Link>
        </p>
-       <select name="languages" id="language">
-                <option value="english">English</option>
-                <option value="urdu">Urdu</option>
-                <option value="chines">Chines</option>
-                <option value="turkish">Turkish</option>
-               
-            </select>
-        {/* <button
+        <button
           className="flex items-center justify-center mt-2 sm:mt-0 "
           type="button"
         >
@@ -36,7 +29,7 @@ export default function TopHeader() {
             alt="close banner"
             className="w-5 h-auto"
           />
-        </button> */}
+        </button>
        
       </div>
     </div>

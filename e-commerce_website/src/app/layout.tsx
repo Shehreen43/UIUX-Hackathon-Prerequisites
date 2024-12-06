@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Poppins } from 'next/font/google';
 import "./globals.css";
 import TopHeader from "./components/TopHeader";
 import { Navbar } from "./components/Navbar";
-
-import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
-config.autoAddCss = false; // Disable automatic addition of CSS
+import Footer from "./components/Footer";
+
 
 
 const geistSans = localFont({
@@ -19,6 +19,8 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const poppins = Poppins ({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -38,6 +40,7 @@ export default function RootLayout({
         <TopHeader />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
