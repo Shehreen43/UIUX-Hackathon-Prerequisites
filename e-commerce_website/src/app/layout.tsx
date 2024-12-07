@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Poppins } from 'next/font/google';
+import { Poppins, Inter } from 'next/font/google';
 import "./globals.css";
 import TopHeader from "./components/TopHeader";
 import { Navbar } from "./components/Navbar";
@@ -20,7 +20,8 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const poppins = Poppins ({ subsets: ['latin'], weight: ['400', '700'] })
+const poppins = Poppins ({ subsets: ['latin'], weight: ['400','600', '700'] })
+const inter = Inter({ subsets: ['latin'], weight: ['400','600', '700'] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
