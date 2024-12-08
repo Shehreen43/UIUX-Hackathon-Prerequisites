@@ -35,12 +35,12 @@ export const Navbar = () => {
         },
         {
             name: 'Sign Up',
-            link: '/SignUp'
+            link: '/SignUp/LogIn'
         },
     ];
 
     return (
-        <nav className="w-full h-auto max-w-screen-2xl mx-auto flex flex-wrap justify-between items-center  xl:gap-20 pt-11 py-4 px-4 md:px-6 lg:px-5">
+        <nav className="w-full h-auto max-w-screen-2xl mx-auto flex flex-wrap justify-between items-center  xl:gap-20 pt-11 py-4 px-4 md:px-2 lg:px-5">
         {/* Mobile Menu (Optional Placeholder) */}
        
           <button className='md:hidden flex items-center justify-between '>
